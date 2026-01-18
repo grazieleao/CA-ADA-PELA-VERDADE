@@ -1,0 +1,139 @@
+[gd_scene load_steps=4 format=3 uid="uid://cntbaoeh55dp3"]
+
+[ext_resource type="Script" uid="uid://dkhg0wm0iayf5" path="res://scripts/menu_principal.gd" id="1_qf3d8"]
+[ext_resource type="Texture2D" uid="uid://cfiua13n4nsjg" path="res://assets/cenário/models/noite no rio pixel art + elemento.png" id="2_330y1"]
+[ext_resource type="FontFile" uid="uid://bux2nkuf4oa5x" path="res://assets/fonts/Kurland.ttf" id="2_qesau"]
+
+[node name="Menu_Principal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.52588e-05
+offset_right = 696.0
+offset_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.355507, 0.266463)
+script = ExtResource("1_qf3d8")
+
+[node name="bg_imagem" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1080.0
+offset_bottom = 720.0
+texture = ExtResource("2_330y1")
+expand_mode = 2
+
+[node name="MadeBy" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -71.5
+offset_top = -40.0
+offset_right = 71.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Dispo" type="Label" parent="MadeBy"]
+layout_mode = 2
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("2_qesau")
+theme_override_font_sizes/font_size = 38
+text = "Disponível no"
+
+[node name="TechnoDark-ti" type="Button" parent="MadeBy"]
+modulate = Color(0.00392157, 0.980392, 0.00392157, 1)
+layout_mode = 2
+focus_mode = 0
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_qesau")
+theme_override_font_sizes/font_size = 38
+text = "GitHub"
+flat = true
+
+[node name="MainContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(650, 650)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -480.5
+offset_top = -403.0
+offset_right = 480.5
+offset_bottom = 403.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="GameName" type="Label" parent="MainContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 25
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("2_qesau")
+theme_override_font_sizes/font_size = 68
+text = "A Caçada pela Verdade"
+horizontal_alignment = 1
+
+[node name="HContainer" type="HBoxContainer" parent="MainContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="VContainer" type="VBoxContainer" parent="MainContainer/HContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Play" type="Button" parent="MainContainer/HContainer/VContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qesau")
+theme_override_font_sizes/font_size = 43
+text = "Jogar"
+
+[node name="Controles" type="Button" parent="MainContainer/HContainer/VContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qesau")
+theme_override_font_sizes/font_size = 43
+text = "Controles
+"
+
+[node name="Créditos" type="Button" parent="MainContainer/HContainer/VContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qesau")
+theme_override_font_sizes/font_size = 43
+text = "Créditos
+"
+
+[node name="Exit" type="Button" parent="MainContainer/HContainer/VContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qesau")
+theme_override_font_sizes/font_size = 43
+text = "Sair"
+
+[node name="Nota_Versão" type="Label" parent="."]
+layout_mode = 0
+offset_left = 2.81288
+offset_top = 694.28
+offset_right = 193.813
+offset_bottom = 717.28
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+text = "Versão BETA 2.0.1"
+
+[connection signal="pressed" from="MadeBy/TechnoDark-ti" to="." method="_on_techno_darkti_pressed"]
+[connection signal="pressed" from="MainContainer/HContainer/VContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MainContainer/HContainer/VContainer/Controles" to="." method="_on_controles_pressed"]
+[connection signal="pressed" from="MainContainer/HContainer/VContainer/Créditos" to="." method="_on_créditos_pressed"]
+[connection signal="pressed" from="MainContainer/HContainer/VContainer/Exit" to="." method="_on_exit_pressed"]
