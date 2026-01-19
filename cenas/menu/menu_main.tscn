@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://cntbaoeh55dp3"]
 
 [ext_resource type="Script" uid="uid://dkhg0wm0iayf5" path="res://scripts/menu_principal.gd" id="1_qf3d8"]
-[ext_resource type="Texture2D" uid="uid://cfiua13n4nsjg" path="res://assets/cenário/models/noite no rio pixel art + elemento.png" id="2_330y1"]
+[ext_resource type="Texture2D" uid="uid://cfiua13n4nsjg" path="res://assets/cenario/models/noite no rio pixel art + elemento.png" id="2_330y1"]
 [ext_resource type="FontFile" uid="uid://bux2nkuf4oa5x" path="res://assets/fonts/Kurland.ttf" id="2_qesau"]
-[ext_resource type="Texture2D" uid="uid://tc8jgnmg7qwy" path="res://assets/Buttons/Jogar.png" id="3_4hhb1"]
-[ext_resource type="Texture2D" uid="uid://d2ym13ujoi51m" path="res://assets/Buttons/Controle.png" id="4_w8u68"]
-[ext_resource type="Texture2D" uid="uid://b6u2flbm43336" path="res://assets/Buttons/Créditos.png" id="5_f5kuv"]
-[ext_resource type="Texture2D" uid="uid://cnduqu8g4hru4" path="res://assets/Buttons/Sair.png" id="6_kkco4"]
-[ext_resource type="Texture2D" uid="uid://bvkjj8b2kdu74" path="res://assets/Logo/Logo-A_Caçada_pela_Verdade.png" id="8_tihkd"]
+[ext_resource type="Texture2D" uid="uid://tc8jgnmg7qwy" path="res://assets/buttons/Jogar.png" id="3_4hhb1"]
+[ext_resource type="Texture2D" uid="uid://d2ym13ujoi51m" path="res://assets/buttons/Controle.png" id="4_w8u68"]
+[ext_resource type="Texture2D" uid="uid://b6u2flbm43336" path="res://assets/buttons/Créditos.png" id="5_f5kuv"]
+[ext_resource type="Texture2D" uid="uid://cnduqu8g4hru4" path="res://assets/buttons/Sair.png" id="6_kkco4"]
+[ext_resource type="Texture2D" uid="uid://bvkjj8b2kdu74" path="res://assets/logo/Logo-A_Caçada_pela_Verdade.png" id="8_tihkd"]
 
 [node name="Menu_Principal" type="Control"]
 layout_mode = 3
