@@ -36,6 +36,7 @@ scale = Vector2(0.4209161, 0.35182202)
 texture = ExtResource("8_tihkd")
 
 [node name="MainContainer" type="VBoxContainer" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -70,6 +71,7 @@ theme_override_constants/separation = 50
 alignment = 1
 
 [node name="VContainer" type="VBoxContainer" parent="MainContainer/HContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -129,6 +131,7 @@ icon = ExtResource("6_kkco4")
 flat = true
 
 [node name="Dispo" type="Label" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 2.8128662
 offset_top = 656.9987
@@ -141,6 +144,7 @@ theme_override_font_sizes/font_size = 38
 text = "Disponível no"
 
 [node name="TechnoDark-ti" type="Button" parent="."]
+visible = false
 modulate = Color(0.00392157, 0.980392, 0.00392157, 1)
 layout_mode = 0
 offset_left = 227.8129
