@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://damo66386kbnv"]
 
-[ext_resource type="Texture2D" uid="uid://1lg7yd8xh3ct" path="res://assets/cenário/maps/chao_cimento.png" id="1_ao23d"]
-[ext_resource type="Texture2D" uid="uid://dp7380c0biqo5" path="res://assets/cenário/maps/tijolos_cinza.png" id="2_dg4h8"]
-[ext_resource type="Texture2D" uid="uid://cp8j681tea2ti" path="res://assets/cenário/models/materiais chao.png" id="3_2hast"]
+[ext_resource type="Texture2D" uid="uid://doyan1ecd8bsf" path="res://assets/cenario/maps/chao_cimento.png" id="1_ao23d"]
+[ext_resource type="Texture2D" uid="uid://b0m2h4giuuk6w" path="res://assets/cenario/maps/tijolos_cinza.png" id="2_dg4h8"]
+[ext_resource type="Texture2D" uid="uid://qee6lyoiky2g" path="res://assets/cenario/models/materiais chao.png" id="3_2hast"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3jxvn"]
 texture = ExtResource("1_ao23d")

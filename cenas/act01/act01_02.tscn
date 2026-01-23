@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=4 uid="uid://bxyoa41vs1hjc"]
 
 [ext_resource type="PackedScene" uid="uid://dytc81mbt1gok" path="res://cenas/tiles/tileset.tscn" id="1_y8alr"]
-[ext_resource type="Texture2D" uid="uid://1lg7yd8xh3ct" path="res://assets/cenário/maps/chao_cimento.png" id="2_rhbgr"]
-[ext_resource type="Texture2D" uid="uid://cp8j681tea2ti" path="res://assets/cenário/models/materiais chao.png" id="2_s1ai4"]
+[ext_resource type="Texture2D" uid="uid://doyan1ecd8bsf" path="res://assets/cenario/maps/chao_cimento.png" id="2_rhbgr"]
+[ext_resource type="Texture2D" uid="uid://qee6lyoiky2g" path="res://assets/cenario/models/materiais chao.png" id="2_s1ai4"]
 [ext_resource type="PackedScene" uid="uid://cvyoslsrv0uof" path="res://cenas/sprites/player.tscn" id="4_pu2ij"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5u6ox"]

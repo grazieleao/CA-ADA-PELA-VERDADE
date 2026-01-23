@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=4 uid="uid://dtx7b2ahrwees"]
 
 [ext_resource type="PackedScene" uid="uid://bvuvbfonrrdkb" path="res://cenas/sprites/npc_eduarda.tscn" id="1_bnry5"]
-[ext_resource type="Texture2D" uid="uid://cp8j681tea2ti" path="res://assets/cenário/models/materiais chao.png" id="1_o0lmx"]
-[ext_resource type="Texture2D" uid="uid://dsjchcuekm1uv" path="res://assets/cenário/maps/museu.png" id="1_ryglw"]
+[ext_resource type="Texture2D" uid="uid://qee6lyoiky2g" path="res://assets/cenario/models/materiais chao.png" id="1_o0lmx"]
+[ext_resource type="Texture2D" uid="uid://b5w5k1kmpb8sk" path="res://assets/cenario/maps/museu.png" id="1_ryglw"]
 [ext_resource type="PackedScene" uid="uid://b7sjygimj717o" path="res://cenas/sprites/player_sem_camera.tscn" id="2_cueie"]
 [ext_resource type="PackedScene" uid="uid://bvdvajauigkt0" path="res://cenas/sprites/boss_noiva_museu.tscn" id="4_fbo5l"]
 
