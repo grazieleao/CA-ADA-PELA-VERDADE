@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://dtx7b2ahrwees"]
+[gd_scene load_steps=22 format=4 uid="uid://dtx7b2ahrwees"]
 
 [ext_resource type="PackedScene" uid="uid://bvuvbfonrrdkb" path="res://cenas/sprites/npc_eduarda.tscn" id="1_bnry5"]
 [ext_resource type="Texture2D" uid="uid://qee6lyoiky2g" path="res://assets/cenario/models/materiais chao.png" id="1_o0lmx"]
@@ -7,116 +7,496 @@
 [ext_resource type="Texture2D" uid="uid://c4oml2ftxl48p" path="res://assets/cenario/maps/rua horizontal.png" id="3_sx7q3"]
 [ext_resource type="Texture2D" uid="uid://d2h6o6a0qnnqr" path="res://assets/cenario/maps/rua com casas horizontal.png" id="4_ku10f"]
 [ext_resource type="Texture2D" uid="uid://v3yn2pakw15d" path="res://assets/cenario/maps/rua JC.png" id="5_sx7q3"]
+[ext_resource type="PackedScene" uid="uid://bvdvajauigkt0" path="res://cenas/sprites/boss_noiva_museu.tscn" id="7_axeob"]
 [ext_resource type="Texture2D" uid="uid://brsiwjbrnj0g3" path="res://assets/cenario/models/arvore.png" id="8_ku10f"]
 [ext_resource type="FontFile" uid="uid://cod6p8fqafkqw" path="res://assets/fonts/Pixelify_Sans/static/PixelifySans-SemiBold.ttf" id="9_lr5jt"]
+[ext_resource type="Texture2D" uid="uid://c81to8tu3wilo" path="res://assets/sprites/Igor Cutscene e gameplay - Copia.png" id="9_weuy6"]
+[ext_resource type="Script" uid="uid://dvba3fjefigii" path="res://scripts/skip.gd" id="10_576rw"]
+[ext_resource type="Texture2D" uid="uid://mch6542jywg6" path="res://assets/sprites/Eduarda Cutscene e gameplay - Copia.png" id="10_axeob"]
+[ext_resource type="Texture2D" uid="uid://bo1ini104ruty" path="res://assets/fonts/caixa dialogo.png" id="11_wvhft"]
+[ext_resource type="Texture2D" uid="uid://dvwylwqb88q1h" path="res://cenas/act01/sprites_cena_01/Storyboard_Frame_10_ActionShot.png" id="14_wvhft"]
+[ext_resource type="Texture2D" uid="uid://cje8hrobpvqpq" path="res://assets/cenario/models/nevoa.png" id="16_hmryb"]
 
-[sub_resource type="Animation" id="Animation_lr5jt"]
+[sub_resource type="Animation" id="Animation_axeob"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("intro/sprites/sprites/Camera2D:position")
+tracks/0/path = NodePath("intro/sprites/sprites:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-1345, 29)]
+"values": [Vector2(0, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("intro/sprites/sprites/Player_sem_camera:position")
+tracks/1/path = NodePath("intro/sprites/dialogo/CaixaDialogo:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-1376, 55)]
+"update": 1,
+"values": [false]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("intro/sprites/sprites/npc_eduarda:position")
+tracks/2/path = NodePath("intro/sprites/dialogo/EduardaCutsceneEGameplayCopia:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-1415, 25)]
+"update": 1,
+"values": [false]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("intro/controles/skip:position")
+tracks/3/path = NodePath("intro/sprites/dialogo/Name:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("intro/sprites/dialogo/dialog:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("intro/sprites/dialogo/dialog:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Tá sentindo isso? Parece que tá ficando mais frio…
+"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("intro/sprites/dialogo/Name:text")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["EDUARDA"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("intro/sprites/dialogo/IgorCutsceneEGameplayCopia:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("intro/sprites/sprites/skip:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(-1235, 96)]
 }
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("intro/sprites/sprites/Camera2D:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1345, 29)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("intro/sprites/dialogo:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("intro/sprites/dialogo/dialog:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(563, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("intro/sprites/sprites/Camera2D:offset")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("intro/boss_noiva_museu:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("intro/boss_noiva_museu:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1471, -15)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("intro/sprites/sprites/npc_eduarda:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("intro/boss_noiva_museu/Nevoa:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("intro/sprites/dialogo/Name:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-948, 67)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("intro/controles/Fade:scale")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.098715, 2.474207)]
+}
 
-[sub_resource type="Animation" id="Animation_ku10f"]
-resource_name = "cut1"
-length = 30.0
+[sub_resource type="Animation" id="Animation_weuy6"]
+resource_name = "cut"
+length = 60.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("intro/sprites/sprites/Camera2D:position")
+tracks/0/path = NodePath("intro/sprites/sprites:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 9.03),
+"times": PackedFloat32Array(0, 24.733334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-1345, 29), Vector2(-673, 33)]
+"values": [Vector2(0, 0), Vector2(1029, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("intro/sprites/sprites/Player_sem_camera:position")
+tracks/1/path = NodePath("intro/sprites/dialogo/CaixaDialogo:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 9.03),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-1376, 55), Vector2(-704, 59)]
+"times": PackedFloat32Array(0, 9.766666, 21.045847),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("intro/sprites/sprites/npc_eduarda:position")
+tracks/2/path = NodePath("intro/sprites/dialogo/EduardaCutsceneEGameplayCopia:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 9.03),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-1415, 25), Vector2(-743, 29)]
+"times": PackedFloat32Array(0, 9.866667, 14.233334, 17.6, 21.045847),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("intro/controles/skip:position")
+tracks/3/path = NodePath("intro/sprites/dialogo/Name:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 9.04),
+"times": PackedFloat32Array(0, 9.733334, 19.833334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("intro/sprites/dialogo/dialog:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 9.787708, 21.066668),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("intro/sprites/dialogo/dialog:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(9.857708, 14.433333, 17.466667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": ["Tá sentindo isso? Parece que tá ficando mais frio…", "Frio ou medo? Essa rua é estranha mesmo…", "Não sei, algo parece estranho,não vejo ninguém na rua além de nós, mas ao mesmo tempo parece que estamos sendo observados…"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("intro/sprites/dialogo/Name:text")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(9.753332, 14.266667, 17.533333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": ["EDUARDA", "IGOR", "EDUARDA"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("intro/sprites/dialogo/IgorCutsceneEGameplayCopia:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 9.833333, 14.433333, 17.441164),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, false, true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("intro/sprites/sprites/skip:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("intro/sprites/sprites/Camera2D:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("intro/sprites/dialogo:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0.2666664, 21.045847),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-1235, 96), Vector2(-566, 98)]
+"values": [Vector2(0, 0), Vector2(288, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("intro/sprites/dialogo/dialog:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(9.9),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1082.2, 80)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("intro/sprites/sprites/Camera2D:offset")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("intro/boss_noiva_museu:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0.5, 23, 25.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("intro/boss_noiva_museu:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(23.133333, 23.633333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-443, -18), Vector2(-443, 11)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("intro/sprites/sprites/npc_eduarda:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0.3, 23.733334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("intro/boss_noiva_museu/Nevoa:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0.33333325, 23.533333, 25.633333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("intro/sprites/StoryboardFrame10ActionShot:visible")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(15.78061, 25.5),
+"transitions": PackedFloat32Array(1, 1.7411013),
+"update": 1,
+"values": [false, true]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("intro/sprites/dialogo/Name:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(9.733334),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1079, 67)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("intro/controles/Fade:scale")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(26.937532, 28.670893, 30.459536, 31.633333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(2.098715, 2.474207), Vector2(5.443721, 3.8802304), Vector2(6.194904, 4.7486806)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_576rw"]
 _data = {
-&"RESET": SubResource("Animation_lr5jt"),
-&"cut1": SubResource("Animation_ku10f")
+&"RESET": SubResource("Animation_axeob"),
+&"cut": SubResource("Animation_weuy6")
 }
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vlht0"]
@@ -138,7 +518,7 @@ texture = ExtResource("1_o0lmx")
 sources/0 = SubResource("TileSetAtlasSource_vlht0")
 
 [node name="act01_01" type="Node2D"]
-metadata/_edit_horizontal_guides_ = [310.0]
+metadata/_edit_horizontal_guides_ = [310.0, 55.0]
 
 [node name="intro" type="Control" parent="."]
 layout_mode = 3
@@ -151,7 +531,7 @@ root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_576rw")
 }
-autoplay = "cut1"
+autoplay = "cut"
 
 [node name="texture_base" type="TileMapLayer" parent="intro"]
 tile_map_data = PackedByteArray("AADE//f/AAAAAAAAAADE//j/AAAAAAEAAADF//f/AAABAAAAAADF//j/AAABAAEAAADE//n/AAAAAAAAAADE//r/AAAAAAEAAADF//n/AAABAAAAAADF//r/AAABAAEAAADE//v/AAAAAAAAAADE//z/AAAAAAEAAADF//v/AAABAAAAAADF//z/AAABAAEAAADG//v/AAAAAAAAAADG//z/AAAAAAEAAADH//v/AAABAAAAAADH//z/AAABAAEAAADG//3/AAAAAAAAAADG//7/AAAAAAEAAADH//3/AAABAAAAAADH//7/AAABAAEAAADE//3/AAAAAAAAAADE//7/AAAAAAEAAADF//3/AAABAAAAAADF//7/AAABAAEAAADI//z/AAAAAAEAAADI//3/AAAAAAEAAADJ//z/AAABAAEAAADJ//3/AAABAAEAAADK//z/AAAAAAEAAADK//3/AAAAAAEAAADL//z/AAABAAEAAADL//3/AAABAAEAAADM//z/AAAAAAEAAADM//3/AAAAAAEAAADN//z/AAABAAEAAADN//3/AAABAAEAAADO//z/AAAAAAEAAADO//3/AAAAAAEAAADP//z/AAABAAEAAADP//3/AAABAAEAAADQ//z/AAAAAAEAAADQ//3/AAAAAAEAAADR//z/AAABAAEAAADR//3/AAABAAEAAADS//z/AAAAAAEAAADS//3/AAAAAAEAAADT//z/AAABAAEAAADT//3/AAABAAEAAADU//z/AAAAAAEAAADU//3/AAAAAAEAAADV//z/AAABAAEAAADV//3/AAABAAEAAADW//z/AAAAAAEAAADW//3/AAAAAAEAAADX//z/AAABAAEAAADX//3/AAABAAEAAADY//z/AAAAAAEAAADY//3/AAAAAAEAAADZ//z/AAABAAEAAADZ//3/AAABAAEAAADa//z/AAAAAAEAAADa//3/AAAAAAEAAADb//z/AAABAAEAAADb//3/AAABAAEAAADc//z/AAAAAAEAAADc//3/AAAAAAEAAADd//z/AAABAAEAAADd//3/AAABAAEAAADe//z/AAAAAAEAAADe//3/AAAAAAEAAADf//z/AAABAAEAAADf//3/AAABAAEAAADg//z/AAAAAAEAAADg//3/AAAAAAEAAADh//z/AAABAAEAAADh//3/AAABAAEAAADi//z/AAAAAAEAAADi//3/AAAAAAEAAADj//z/AAABAAEAAADj//3/AAABAAEAAADG//n/AAAAAAAAAADG//r/AAAAAAEAAADH//n/AAABAAAAAADH//r/AAABAAEAAADI//n/AAAAAAAAAADI//r/AAAAAAEAAADJ//n/AAABAAAAAADJ//r/AAABAAEAAADK//n/AAAAAAAAAADK//r/AAAAAAEAAADL//n/AAABAAAAAADL//r/AAABAAEAAADK//v/AAAAAAAAAADL//v/AAABAAAAAADM//v/AAAAAAAAAADN//v/AAABAAAAAADO//v/AAAAAAAAAADP//v/AAABAAAAAADQ//v/AAAAAAAAAADR//v/AAABAAAAAADS//v/AAAAAAAAAADT//v/AAABAAAAAADU//v/AAAAAAAAAADV//v/AAABAAAAAADW//v/AAAAAAAAAADX//v/AAABAAAAAADY//v/AAAAAAAAAADZ//v/AAABAAAAAADa//v/AAAAAAAAAADb//v/AAABAAAAAADc//v/AAAAAAAAAADd//v/AAABAAAAAADe//v/AAAAAAAAAADf//v/AAABAAAAAADg//v/AAAAAAAAAADh//v/AAABAAAAAADi//v/AAAAAAAAAADj//v/AAABAAAAAADi//n/AAAAAAAAAADi//r/AAAAAAEAAADj//n/AAABAAAAAADj//r/AAABAAEAAADg//n/AAAAAAAAAADg//r/AAAAAAEAAADh//n/AAABAAAAAADh//r/AAABAAEAAADe//n/AAAAAAAAAADe//r/AAAAAAEAAADf//n/AAABAAAAAADf//r/AAABAAEAAADc//n/AAAAAAAAAADc//r/AAAAAAEAAADd//n/AAABAAAAAADd//r/AAABAAEAAADa//n/AAAAAAAAAADa//r/AAAAAAEAAADb//n/AAABAAAAAADb//r/AAABAAEAAADY//n/AAAAAAAAAADY//r/AAAAAAEAAADZ//n/AAABAAAAAADZ//r/AAABAAEAAADW//n/AAAAAAAAAADW//r/AAAAAAEAAADX//n/AAABAAAAAADX//r/AAABAAEAAADU//n/AAAAAAAAAADU//r/AAAAAAEAAADV//n/AAABAAAAAADV//r/AAABAAEAAADS//n/AAAAAAAAAADS//r/AAAAAAEAAADT//n/AAABAAAAAADT//r/AAABAAEAAADQ//n/AAAAAAAAAADQ//r/AAAAAAEAAADR//n/AAABAAAAAADR//r/AAABAAEAAADO//f/AAAAAAAAAADO//j/AAAAAAEAAADP//f/AAABAAAAAADP//j/AAABAAEAAADM//f/AAAAAAAAAADM//j/AAAAAAEAAADN//f/AAABAAAAAADN//j/AAABAAEAAADM//n/AAAAAAAAAADM//r/AAAAAAEAAADN//n/AAABAAAAAADN//r/AAABAAEAAADI//v/AAAAAAAAAADJ//v/AAABAAAAAADO//n/AAAAAAAAAADO//r/AAAAAAEAAADP//n/AAABAAAAAADP//r/AAABAAEAAADj/wEAAAACAAAAAADj/wAAAAACAAAAAADj////AAACAAAAAADj//7/AAACAAAAAADi//7/AAACAAAAAADi////AAACAAAAAADi/wAAAAACAAAAAADi/wEAAAACAAAAAADk//r/AAABAAIAAADk//v/AAABAAIAAADk//z/AAABAAIAAADk//3/AAABAAIAAADk//7/AAABAAIAAADl//7/AAABAAIAAADm//7/AAABAAIAAADn//7/AAABAAIAAADn////AAABAAIAAADm////AAABAAIAAADl////AAABAAIAAADk////AAABAAIAAADk//n/AAABAAIAAADl//n/AAABAAIAAADm//n/AAABAAIAAADn//n/AAABAAIAAADn//r/AAABAAIAAADo//r/AAABAAIAAADo//v/AAABAAIAAADo//z/AAABAAIAAADo//n/AAABAAIAAADl//r/AAABAAIAAADm//v/AAABAAIAAADn//v/AAABAAIAAADm//r/AAABAAIAAADl//v/AAABAAIAAADl//z/AAABAAIAAADl//3/AAABAAIAAADm//z/AAABAAIAAADm//3/AAABAAIAAADn//z/AAABAAIAAADn//3/AAABAAIAAADo//7/AAABAAIAAADo////AAABAAIAAADo//3/AAABAAIAAAAAAAAAAAADAAEAAAAAAAEAAAACAAEAAAABAAAAAAACAAEAAAABAAEAAAADAAEAAAACAAAAAAADAAEAAAACAAEAAAACAAEAAAADAAAAAAACAAEAAAADAAEAAAADAAEAAAAEAAAAAAADAAEAAAAEAAEAAAACAAEAAAAFAAAAAAACAAEAAAAFAAEAAAACAAEAAAAGAAAAAAADAAEAAAAGAAEAAAADAAEAAAAFAP//AAACAAAAAAAGAP//AAADAAAAAAAFAP3/AAACAAAAAAAFAP7/AAACAAEAAAAGAP3/AAADAAAAAAAGAP7/AAADAAEAAAADAP3/AAACAAAAAAADAP7/AAACAAEAAAAEAP3/AAADAAAAAAAEAP7/AAADAAEAAAABAP3/AAACAAAAAAABAP7/AAACAAEAAAACAP3/AAADAAAAAAACAP7/AAADAAEAAAABAP//AAACAAAAAAACAP//AAADAAAAAAADAP//AAACAAAAAAAEAP//AAADAAAAAAD/////AAACAAAAAAD//wAAAAACAAEAAAAAAP//AAADAAAAAAD///3/AAACAAAAAAD///7/AAACAAEAAAAAAP3/AAADAAAAAAAAAP7/AAADAAEAAAD9//3/AAACAAAAAAD9//7/AAACAAEAAAD+//3/AAADAAAAAAD+//7/AAADAAEAAAD9//v/AAACAAAAAAD9//z/AAACAAEAAAD+//v/AAADAAAAAAD+//z/AAADAAEAAAD///n/AAACAAAAAAD///r/AAACAAEAAAAAAPn/AAADAAAAAAAAAPr/AAADAAEAAAD///v/AAACAAAAAAD///z/AAACAAEAAAAAAPv/AAADAAAAAAAAAPz/AAADAAEAAAABAPv/AAACAAAAAAABAPz/AAACAAEAAAACAPv/AAADAAAAAAACAPz/AAADAAEAAAADAPv/AAACAAAAAAADAPz/AAACAAEAAAAEAPv/AAADAAAAAAAEAPz/AAADAAEAAAAFAPv/AAACAAAAAAAFAPz/AAACAAEAAAAGAPv/AAADAAAAAAAGAPz/AAADAAEAAAADAPn/AAACAAAAAAADAPr/AAACAAEAAAAEAPn/AAADAAAAAAAEAPr/AAADAAEAAAABAPn/AAACAAAAAAABAPr/AAACAAEAAAACAPn/AAADAAAAAAACAPr/AAADAAEAAAD9//n/AAACAAAAAAD9//r/AAACAAEAAAD+//n/AAADAAAAAAD+//r/AAADAAEAAAD///f/AAACAAAAAAD///j/AAACAAEAAAAAAPf/AAADAAAAAAAAAPj/AAADAAEAAAABAPf/AAACAAAAAAABAPj/AAACAAEAAAACAPf/AAADAAAAAAACAPj/AAADAAEAAAADAPf/AAACAAAAAAADAPj/AAACAAEAAAAEAPf/AAADAAAAAAAEAPj/AAADAAEAAAAFAPn/AAACAAAAAAAFAPr/AAACAAEAAAAGAPn/AAADAAAAAAAGAPr/AAADAAEAAAAFAPf/AAACAAAAAAAFAPj/AAACAAEAAAAGAPf/AAADAAAAAAAGAPj/AAADAAEAAAABAPX/AAACAAAAAAABAPb/AAACAAEAAAACAPX/AAADAAAAAAACAPb/AAADAAEAAAD///X/AAACAAAAAAD///b/AAACAAEAAAAAAPX/AAADAAAAAAAAAPb/AAADAAEAAAD9//X/AAACAAAAAAD9//b/AAACAAEAAAD+//X/AAADAAAAAAD+//b/AAADAAEAAAD9//f/AAACAAAAAAD9//j/AAACAAEAAAD+//f/AAADAAAAAAD+//j/AAADAAEAAAD7//X/AAACAAAAAAD7//b/AAACAAEAAAD8//X/AAADAAAAAAD8//b/AAADAAEAAAD7//f/AAACAAAAAAD7//j/AAACAAEAAAD8//f/AAADAAAAAAD8//j/AAADAAEAAAADAPX/AAACAAAAAAADAPb/AAACAAEAAAAEAPX/AAADAAAAAAAEAPb/AAADAAEAAAAFAPX/AAACAAAAAAAFAPb/AAACAAEAAAAGAPX/AAADAAAAAAAGAPb/AAADAAEAAADk//f/AAAAAAAAAADk//j/AAAAAAEAAADl//f/AAABAAAAAADl//j/AAABAAEAAADm//f/AAAAAAAAAADm//j/AAAAAAEAAADn//f/AAABAAAAAADn//j/AAABAAEAAADo//f/AAAAAAAAAADo//j/AAAAAAEAAADp//f/AAABAAAAAADp//j/AAABAAEAAADo//X/AAAAAAAAAADo//b/AAAAAAEAAADp//X/AAABAAAAAADp//b/AAABAAEAAADm//X/AAAAAAAAAADm//b/AAAAAAEAAADn//X/AAABAAAAAADn//b/AAABAAEAAADk//X/AAAAAAAAAADk//b/AAAAAAEAAADl//X/AAABAAAAAADl//b/AAABAAEAAADi//X/AAAAAAAAAADi//b/AAAAAAEAAADj//X/AAABAAAAAADj//b/AAABAAEAAADi//f/AAAAAAAAAADi//j/AAAAAAEAAADj//f/AAABAAAAAADj//j/AAABAAEAAADg//f/AAAAAAAAAADg//j/AAAAAAEAAADh//f/AAABAAAAAADh//j/AAABAAEAAADe//f/AAAAAAAAAADe//j/AAAAAAEAAADf//f/AAABAAAAAADf//j/AAABAAEAAADg//X/AAAAAAAAAADg//b/AAAAAAEAAADh//X/AAABAAAAAADh//b/AAABAAEAAADg//P/AAAAAAAAAADg//T/AAAAAAEAAADh//P/AAABAAAAAADh//T/AAABAAEAAADi//P/AAAAAAAAAADi//T/AAAAAAEAAADj//P/AAAAAAAAAADj//T/AAAAAAEAAADk//P/AAABAAAAAADk//T/AAABAAEAAADl//P/AAAAAAAAAADl//T/AAAAAAEAAADm//P/AAABAAAAAADm//T/AAABAAEAAADn//P/AAAAAAAAAADn//T/AAAAAAEAAADo//P/AAABAAAAAADo//T/AAABAAEAAADp//P/AAAAAAAAAADp//T/AAAAAAEAAADq//X/AAAAAAAAAADq//b/AAAAAAEAAADr//X/AAABAAAAAADr//b/AAABAAEAAADs//X/AAAAAAAAAADs//b/AAAAAAEAAADt//X/AAABAAAAAADt//b/AAABAAEAAADs//P/AAABAAAAAADs//T/AAABAAEAAADt//P/AAAAAAAAAADt//T/AAAAAAEAAADu//P/AAABAAAAAADu//T/AAABAAEAAADv//P/AAAAAAAAAADv//T/AAAAAAEAAADg//H/AAAAAAAAAADg//L/AAAAAAEAAADh//H/AAABAAAAAADh//L/AAABAAEAAADi//H/AAAAAAAAAADi//L/AAAAAAEAAADj//H/AAABAAAAAADj//L/AAABAAEAAADk//H/AAAAAAAAAADk//L/AAAAAAEAAADl//H/AAABAAAAAADl//L/AAABAAEAAADm//H/AAAAAAAAAADm//L/AAAAAAEAAADn//H/AAABAAAAAADn//L/AAABAAEAAADo//H/AAAAAAAAAADo//L/AAAAAAEAAADp//H/AAABAAAAAADp//L/AAABAAEAAADq//H/AAAAAAAAAADq//L/AAAAAAEAAADr//H/AAABAAAAAADr//L/AAABAAEAAADs//H/AAAAAAAAAADs//L/AAAAAAEAAADt//H/AAABAAAAAADt//L/AAABAAEAAADu//H/AAAAAAAAAADu//L/AAAAAAEAAADv//H/AAABAAAAAADv//L/AAABAAEAAADw//H/AAAAAAAAAADw//L/AAAAAAEAAADx//H/AAABAAAAAADx//L/AAABAAEAAADy//H/AAAAAAAAAADy//L/AAAAAAEAAADz//H/AAABAAAAAADz//L/AAABAAEAAAD0//H/AAAAAAAAAAD0//L/AAAAAAEAAAD1//H/AAABAAAAAAD1//L/AAABAAEAAAD2//H/AAAAAAAAAAD2//L/AAAAAAEAAAD3//H/AAABAAAAAAD3//L/AAABAAEAAAD4//H/AAAAAAAAAAD4//L/AAAAAAEAAAD5//H/AAABAAAAAAD5//L/AAABAAEAAAD6//H/AAAAAAAAAAD6//L/AAAAAAEAAAD7//H/AAABAAAAAAD7//L/AAABAAEAAAD8//H/AAAAAAAAAAD8//L/AAAAAAEAAAD9//H/AAABAAAAAAD9//L/AAABAAEAAAD+//H/AAAAAAAAAAD+//L/AAAAAAEAAAD///H/AAABAAAAAAD///L/AAABAAEAAAAAAPH/AAAAAAAAAAAAAPL/AAAAAAEAAAABAPH/AAABAAAAAAABAPL/AAABAAEAAAACAPH/AAAAAAAAAAACAPL/AAAAAAEAAAADAPH/AAABAAAAAAADAPL/AAABAAEAAAAEAPH/AAAAAAAAAAAEAPL/AAAAAAEAAAAFAPH/AAABAAAAAAAFAPL/AAABAAEAAAAGAPH/AAAAAAAAAAAGAPL/AAAAAAEAAAAHAPH/AAABAAAAAAAHAPL/AAABAAEAAAAFAPP/AAAAAAAAAAAFAPT/AAAAAAEAAAAGAPP/AAABAAAAAAAGAPT/AAABAAEAAAADAPP/AAAAAAAAAAADAPT/AAAAAAEAAAAEAPP/AAABAAAAAAAEAPT/AAABAAEAAAABAPP/AAAAAAAAAAABAPT/AAAAAAEAAAACAPP/AAABAAAAAAACAPT/AAABAAEAAAD///P/AAAAAAAAAAD///T/AAAAAAEAAAAAAPP/AAABAAAAAAAAAPT/AAABAAEAAAD9//P/AAAAAAAAAAD9//T/AAAAAAEAAAD+//P/AAABAAAAAAD+//T/AAABAAEAAAD7//P/AAAAAAAAAAD7//T/AAAAAAEAAAD8//P/AAABAAAAAAD8//T/AAABAAEAAAD5//P/AAAAAAAAAAD5//T/AAAAAAEAAAD6//P/AAABAAAAAAD6//T/AAABAAEAAAD3//P/AAAAAAAAAAD3//T/AAAAAAEAAAD4//P/AAABAAAAAAD4//T/AAABAAEAAAD1//P/AAAAAAAAAAD1//T/AAAAAAEAAAD2//P/AAABAAAAAAD2//T/AAABAAEAAADz//P/AAAAAAAAAADz//T/AAAAAAEAAAD0//P/AAABAAAAAAD0//T/AAABAAEAAADx//P/AAAAAAAAAADx//T/AAAAAAEAAADy//P/AAABAAAAAADy//T/AAABAAEAAADw//P/AAABAAAAAADw//T/AAABAAEAAADr//P/AAAAAAAAAADr//T/AAAAAAEAAADq//P/AAABAAAAAADq//T/AAABAAEAAAA=")
@@ -226,13 +606,7 @@ position = Vector2(-1376, 55)
 [node name="npc_eduarda" parent="intro/sprites/sprites" instance=ExtResource("1_bnry5")]
 position = Vector2(-1415, 25)
 
-[node name="controles" type="Control" parent="intro"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="skip" type="Button" parent="intro/controles"]
-layout_mode = 0
+[node name="skip" type="Button" parent="intro/sprites/sprites"]
 offset_left = -1235.0
 offset_top = 96.0
 offset_right = -335.0
@@ -242,18 +616,84 @@ theme_override_fonts/font = ExtResource("9_lr5jt")
 theme_override_font_sizes/font_size = 98
 text = "PULAR"
 icon_alignment = 1
+script = ExtResource("10_576rw")
 
-[node name="ColorRect" type="ColorRect" parent="intro/controles"]
-layout_mode = 0
+[node name="StoryboardFrame10ActionShot" type="Sprite2D" parent="intro/sprites"]
+position = Vector2(-307, 43)
+scale = Vector2(0.29434097, 0.2932168)
+texture = ExtResource("14_wvhft")
+
+[node name="dialogo" type="Node2D" parent="intro/sprites"]
+
+[node name="IgorCutsceneEGameplayCopia" type="Sprite2D" parent="intro/sprites/dialogo"]
+visible = false
+position = Vector2(-1057.9531, 56)
+scale = Vector2(0.069, 0.069)
+texture = ExtResource("9_weuy6")
+
+[node name="EduardaCutsceneEGameplayCopia" type="Sprite2D" parent="intro/sprites/dialogo"]
+visible = false
+position = Vector2(-1062.2019, 57.000004)
+scale = Vector2(0.06946868, 0.06946868)
+texture = ExtResource("10_axeob")
+
+[node name="CaixaDialogo" type="Sprite2D" parent="intro/sprites/dialogo"]
+visible = false
+position = Vector2(-988.2019, 88.999985)
+scale = Vector2(1.6799951, 1)
+texture = ExtResource("11_wvhft")
+
+[node name="Name" type="Label" parent="intro/sprites/dialogo"]
+visible = false
+offset_left = -948.0
+offset_top = 67.0
+offset_right = -906.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_lr5jt")
+theme_override_font_sizes/font_size = 10
+text = "EDUARDA"
+
+[node name="dialog" type="Label" parent="intro/sprites/dialogo"]
+visible = false
+offset_left = 563.0
+offset_right = 1205.0
+offset_bottom = 29.0
+scale = Vector2(0.29113877, 0.98665786)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_lr5jt")
+theme_override_font_sizes/font_size = 10
+text = "Tá sentindo isso? Parece que tá ficando mais frio…
+"
+
+[node name="controles" type="Control" parent="intro"]
+anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="intro/controles"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
 
 [node name="Fade" type="ColorRect" parent="intro/controles"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -607.0
+offset_top = -159.0
+offset_right = -507.0
+offset_bottom = -59.0
+scale = Vector2(2.098715, 2.474207)
+color = Color(0.06, 0.06, 0.06, 1)
+
+[node name="ColorRect" type="ColorRect" parent="intro/controles"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = -337.0
+offset_right = 135.0
+offset_bottom = -297.0
+
+[node name="boss_noiva_museu" parent="intro" instance=ExtResource("7_axeob")]
+visible = false
+position = Vector2(-1471, -15)
+
+[node name="Nevoa" type="Sprite2D" parent="intro/boss_noiva_museu"]
+visible = false
+position = Vector2(29, 35)
+texture = ExtResource("16_hmryb")
+
+[connection signal="pressed" from="intro/sprites/sprites/skip" to="intro/sprites/sprites/skip" method="_on_pressed"]

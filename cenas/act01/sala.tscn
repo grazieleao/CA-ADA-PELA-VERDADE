@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3 uid="uid://cl33l6nd1pfw6"]
+
+[ext_resource type="Texture2D" uid="uid://65llncoy4yea" path="res://assets/cenario/models/sala chao.png" id="1_21w6p"]
+[ext_resource type="PackedScene" uid="uid://cvyoslsrv0uof" path="res://cenas/sprites/player.tscn" id="2_bw2r3"]
+[ext_resource type="Texture2D" uid="uid://diyb6c8falvv3" path="res://assets/cenario/models/sala armario.png" id="3_hggm7"]
+[ext_resource type="Texture2D" uid="uid://bx1pmbsuh2l8c" path="res://assets/cenario/models/sala mesa.png" id="4_xex5w"]
+[ext_resource type="PackedScene" uid="uid://cxum1jj6fetg8" path="res://cenas/act01/pathyaway.tscn" id="7_xex5w"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_eyceh"]
+a = Vector2(0, -7)
+b = Vector2(0, 90)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_q1wm6"]
+a = Vector2(-12, 10)
+b = Vector2(86, 10)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_nk6ab"]
+a = Vector2(-1, -85)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_wlt5h"]
+b = Vector2(21, 0)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_shc4r"]
+a = Vector2(-72, 0)
+b = Vector2(8, 0)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4rv4c"]
+texture = ExtResource("1_21w6p")
+
+[sub_resource type="TileSet" id="TileSet_sxqei"]
+sources/1 = SubResource("TileSetAtlasSource_4rv4c")
+
+[node name="Sala" type="Node2D"]
+
+[node name="SalaChao" type="Sprite2D" parent="."]
+position = Vector2(62, 61)
+texture = ExtResource("1_21w6p")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="SalaChao"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SalaChao/StaticBody2D"]
+position = Vector2(-62, -26)
+shape = SubResource("SegmentShape2D_eyceh")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="SalaChao"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SalaChao/StaticBody2D2"]
+position = Vector2(-49, 53)
+shape = SubResource("SegmentShape2D_q1wm6")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="SalaChao"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SalaChao/StaticBody2D3"]
+position = Vector2(63, 54)
+shape = SubResource("SegmentShape2D_nk6ab")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="SalaChao"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SalaChao/StaticBody2D4"]
+position = Vector2(40, -31)
+shape = SubResource("SegmentShape2D_wlt5h")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="SalaChao"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SalaChao/StaticBody2D5"]
+position = Vector2(9, -31)
+shape = SubResource("SegmentShape2D_shc4r")
+
+[node name="Player" parent="." instance=ExtResource("2_bw2r3")]
+position = Vector2(81, 80)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_sxqei")
+format = 2
+
+[node name="SalaArmario" type="Sprite2D" parent="."]
+position = Vector2(48, 68)
+texture = ExtResource("3_hggm7")
+
+[node name="SalaMesa" type="Sprite2D" parent="."]
+position = Vector2(58, 64)
+texture = ExtResource("4_xex5w")
+
+[node name="quarto" parent="." instance=ExtResource("7_xex5w")]
+position = Vector2(61, 5)
+
+[node name="act01_03" parent="." instance=ExtResource("7_xex5w")]
+position = Vector2(76, 95)

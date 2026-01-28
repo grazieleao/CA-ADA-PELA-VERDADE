@@ -161,7 +161,7 @@ position = Vector2(16, 14)
 texture = ExtResource("1_40ft3")
 hframes = 8
 vframes = 5
-frame = 31
+frame = 24
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 libraries = {
