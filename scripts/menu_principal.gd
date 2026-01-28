@@ -11,7 +11,7 @@ func _on_exit_pressed() -> void:
 	get_tree().quit() # Fecha o jogo
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://cenas/act01/act01_02.tscn")
+	get_tree().change_scene_to_file("res://cenas/act01/act01_01.tscn")
 
 func _on_controles_pressed() -> void:
 	get_tree().change_scene_to_file("res://cenas/menu/controles.tscn")
