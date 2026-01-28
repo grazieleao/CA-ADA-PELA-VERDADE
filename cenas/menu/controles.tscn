@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://dfjqb6ok58ekg" path="res://assets/fonts/PixelifySans-Bold.ttf" id="2_8kbdg"]
 [ext_resource type="FontFile" uid="uid://b1treqffr8u3g" path="res://assets/fonts/PixelifySans-Medium.ttf" id="3_5pgcr"]
 [ext_resource type="Texture2D" uid="uid://c6tvkw0grkioh" path="res://assets/fonts/wasd.png" id="4_ucy0b"]
-[ext_resource type="Texture2D" uid="uid://bnbnrrp7j2vjh" path="res://assets/buttons/Jogar.png" id="5_8kbdg"]
+[ext_resource type="FontFile" uid="uid://bqqfxhublcuub" path="res://assets/fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="5_5pgcr"]
 [ext_resource type="Script" uid="uid://ja8psknerx0g" path="res://scripts/voltar.gd" id="6_5pgcr"]
 
 [node name="CenaIntroMenu" type="Node2D"]
@@ -62,13 +62,14 @@ texture = ExtResource("4_ucy0b")
 expand_mode = 1
 
 [node name="voltar" type="Button" parent="."]
-offset_left = 109.0
-offset_top = 140.0
-offset_right = 1797.0
-offset_bottom = 668.0
+offset_left = 293.0
+offset_top = 155.00002
+offset_right = 1193.0
+offset_bottom = 455.0
 scale = Vector2(0.09109313, 0.09109313)
-icon = ExtResource("5_8kbdg")
-flat = true
+theme_override_fonts/font = ExtResource("5_5pgcr")
+theme_override_font_sizes/font_size = 78
+text = "VOLTAR"
 icon_alignment = 1
 script = ExtResource("6_5pgcr")
 
