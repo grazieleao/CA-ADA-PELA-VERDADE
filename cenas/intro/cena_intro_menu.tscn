@@ -34,6 +34,7 @@ offset_left = 250.0
 offset_top = 52.0
 offset_right = 355.0
 offset_bottom = 141.0
+theme_override_constants/line_spacing = -4
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_d67a5")
 theme_override_font_sizes/font_size = 14
@@ -43,7 +44,7 @@ S: CIMA
 D: DIREITA"
 vertical_alignment = 1
 
-[node name="TextureRect2" type="TextureRect" parent="."]
+[node name="img_wasd" type="TextureRect" parent="."]
 offset_left = 60.0
 offset_top = 61.0
 offset_right = 155.0
