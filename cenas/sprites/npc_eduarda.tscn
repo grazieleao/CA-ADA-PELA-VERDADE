@@ -161,12 +161,13 @@ position = Vector2(16, 14)
 texture = ExtResource("1_40ft3")
 hframes = 8
 vframes = 5
-frame = 24
+frame = 31
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_6tluq")
 }
+autoplay = "correr_direita"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(16, 26)
