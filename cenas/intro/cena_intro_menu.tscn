@@ -1,3 +1,31 @@
-[gd_scene format=3 uid="uid://dws7vfevldbt4"]
+[gd_scene load_steps=3 format=3 uid="uid://dws7vfevldbt4"]
+
+[ext_resource type="VideoStream" uid="uid://t06idd4ycpud" path="res://resources/intro.ogv" id="1_stjch"]
+[ext_resource type="Script" uid="uid://j2blx2ymfqs4" path="res://scripts/video_stream_player.gd" id="2_stjch"]
 
 [node name="intro" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 1080.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35324025, 0.17361864)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+stream = ExtResource("1_stjch")
+autoplay = true
+script = ExtResource("2_stjch")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="finished" from="VideoStreamPlayer" to="VideoStreamPlayer" method="_on_finished"]
