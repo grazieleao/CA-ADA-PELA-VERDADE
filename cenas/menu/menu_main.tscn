@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dkhg0wm0iayf5" path="res://scripts/menu_principal.gd" id="1_qf3d8"]
 [ext_resource type="Texture2D" uid="uid://w7e6uv1yvye1" path="res://assets/cenario/models/noite no rio pixel art + elemento.png" id="2_330y1"]
-[ext_resource type="FontFile" uid="uid://bux2nkuf4oa5x" path="res://assets/fonts/Kurland.ttf" id="2_qesau"]
 [ext_resource type="Texture2D" uid="uid://bnbnrrp7j2vjh" path="res://assets/buttons/Jogar.png" id="3_4hhb1"]
+[ext_resource type="FontFile" uid="uid://bqqfxhublcuub" path="res://assets/fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="4_4hhb1"]
 [ext_resource type="Texture2D" uid="uid://ccqt8nio1qeff" path="res://assets/buttons/Controle.png" id="4_w8u68"]
 [ext_resource type="Texture2D" uid="uid://dpkcnnx8acivo" path="res://assets/buttons/Créditos.png" id="5_f5kuv"]
 [ext_resource type="Texture2D" uid="uid://ch4ofd3o3cjt7" path="res://assets/buttons/Sair.png" id="6_kkco4"]
@@ -57,7 +57,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/outline_size = 25
 theme_override_constants/shadow_outline_size = 10
-theme_override_fonts/font = ExtResource("2_qesau")
 theme_override_font_sizes/font_size = 68
 text = "A Caçada pela Verdade"
 horizontal_alignment = 1
@@ -86,6 +85,7 @@ offset_right = 202.25166
 offset_bottom = 34.25854
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("4_4hhb1")
 theme_override_font_sizes/font_size = 21
 text = "Versão BETA 2.0.1"
 
@@ -139,7 +139,6 @@ offset_right = 223.81287
 offset_bottom = 696.9987
 theme_override_constants/outline_size = 15
 theme_override_constants/shadow_outline_size = 10
-theme_override_fonts/font = ExtResource("2_qesau")
 theme_override_font_sizes/font_size = 38
 text = "Disponível no"
 
@@ -153,7 +152,6 @@ offset_right = 351.8129
 offset_bottom = 700.99866
 focus_mode = 0
 theme_override_constants/outline_size = 15
-theme_override_fonts/font = ExtResource("2_qesau")
 theme_override_font_sizes/font_size = 38
 text = "GitHub"
 flat = true
