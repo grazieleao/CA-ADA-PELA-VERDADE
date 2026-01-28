@@ -1,12 +1,10 @@
-[gd_scene load_steps=16 format=4 uid="uid://ck0vs2qrjhhh8"]
+[gd_scene load_steps=14 format=4 uid="uid://ck0vs2qrjhhh8"]
 
 [ext_resource type="Texture2D" uid="uid://qee6lyoiky2g" path="res://assets/cenario/models/materiais chao.png" id="1_k4j03"]
 [ext_resource type="Texture2D" uid="uid://cmdexyk8cqduc" path="res://assets/cenario/maps/casa horizontal.png" id="2_0pw2j"]
 [ext_resource type="Texture2D" uid="uid://brsiwjbrnj0g3" path="res://assets/cenario/models/arvore.png" id="3_3m1u3"]
 [ext_resource type="PackedScene" uid="uid://cvyoslsrv0uof" path="res://cenas/sprites/player.tscn" id="4_0pw2j"]
 [ext_resource type="Texture2D" uid="uid://jlwu7otmkspm" path="res://assets/sprites/avô.png" id="5_3m1u3"]
-[ext_resource type="PackedScene" uid="uid://cxum1jj6fetg8" path="res://cenas/act01/pathyaway.tscn" id="6_aufyf"]
-[ext_resource type="Script" uid="uid://wuhicypmjnka" path="res://scripts/pathyaway.gd" id="7_j1j45"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rmboh"]
 texture = ExtResource("1_k4j03")
@@ -504,11 +502,3 @@ shape = SubResource("CircleShape2D_rmboh")
 
 [node name="Player" parent="persons" instance=ExtResource("4_0pw2j")]
 position = Vector2(14, 5)
-
-[node name="Node2D" type="Node2D" parent="."]
-
-[node name="pathyaway" parent="Node2D" instance=ExtResource("6_aufyf")]
-position = Vector2(-20, -63)
-script = ExtResource("7_j1j45")
-
-[connection signal="body_entered" from="Node2D/pathyaway" to="Node2D/pathyaway" method="_on_body_entered"]
