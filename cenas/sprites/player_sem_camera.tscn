@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://b7sjygimj717o"]
 
-[ext_resource type="Texture2D" uid="uid://bdxavis6mhl5a" path="res://assets/sprites/personagem masculino.png" id="2_6e6g3"]
+[ext_resource type="Texture2D" uid="uid://3lxqy1cgdrsf" path="res://assets/sprites/personagem masculino.png" id="2_6e6g3"]
 
 [sub_resource type="Animation" id="Animation_u1vie"]
 resource_name = "correr_costa"
@@ -140,14 +140,14 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_226yv"]
 _data = {
-"correr_costa": SubResource("Animation_u1vie"),
-"correr_direita": SubResource("Animation_xfobd"),
-"correr_esquerda": SubResource("Animation_bu8y2"),
-"correr_frente": SubResource("Animation_fntx6"),
-"parado_costas": SubResource("Animation_2ws0l"),
-"parado_direita": SubResource("Animation_wc6wy"),
-"parado_esquerda": SubResource("Animation_87qn0"),
-"parado_frente": SubResource("Animation_wr3sq")
+&"correr_costa": SubResource("Animation_u1vie"),
+&"correr_direita": SubResource("Animation_xfobd"),
+&"correr_esquerda": SubResource("Animation_bu8y2"),
+&"correr_frente": SubResource("Animation_fntx6"),
+&"parado_costas": SubResource("Animation_2ws0l"),
+&"parado_direita": SubResource("Animation_wc6wy"),
+&"parado_esquerda": SubResource("Animation_87qn0"),
+&"parado_frente": SubResource("Animation_wr3sq")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u4xpc"]
@@ -165,8 +165,9 @@ frame = 24
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_226yv")
+&"": SubResource("AnimationLibrary_226yv")
 }
+autoplay = "correr_direita"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0, -4.5)
