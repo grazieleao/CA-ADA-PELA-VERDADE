@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://dws7vfevldbt4"]
+[gd_scene load_steps=3 format=3 uid="uid://dws7vfevldbt4"]
+
+[sub_resource type="Animation" id="Animation_uaato"]
+resource_name = "intro_menu"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_utwix"]
+_data = {
+&"intro_menu": SubResource("Animation_uaato")
+}
 
 [node name="CenaIntroMenu" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_utwix")
+}
