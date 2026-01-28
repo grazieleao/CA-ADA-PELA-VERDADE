@@ -1,16 +1,60 @@
-[gd_scene load_steps=3 format=3 uid="uid://dws7vfevldbt4"]
+[gd_scene load_steps=5 format=3 uid="uid://dws7vfevldbt4"]
 
-[sub_resource type="Animation" id="Animation_uaato"]
-resource_name = "intro_menu"
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_utwix"]
-_data = {
-&"intro_menu": SubResource("Animation_uaato")
-}
+[ext_resource type="Texture2D" uid="uid://bhp3jrvlcoeo3" path="res://assets/background/noite no rio pixel art + elemento.png" id="1_stjch"]
+[ext_resource type="Texture2D" uid="uid://c6tvkw0grkioh" path="res://assets/fonts/wasd.png" id="2_d88ou"]
+[ext_resource type="FontFile" uid="uid://dfjqb6ok58ekg" path="res://assets/fonts/PixelifySans-Bold.ttf" id="2_x2xua"]
+[ext_resource type="FontFile" uid="uid://b1treqffr8u3g" path="res://assets/fonts/PixelifySans-Medium.ttf" id="3_d67a5"]
 
 [node name="CenaIntroMenu" type="Node2D"]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_utwix")
-}
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 386.0
+offset_bottom = 193.0
+texture = ExtResource("1_stjch")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 385.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 0.43137255)
+
+[node name="title" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 108.0
+offset_top = 21.0
+offset_right = 280.0
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_x2xua")
+theme_override_font_sizes/font_size = 18
+text = "CONTROLES DO JOGO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="descrição controles" type="Label" parent="."]
+offset_left = 254.0
+offset_top = 61.0
+offset_right = 357.0
+offset_bottom = 146.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_d67a5")
+theme_override_font_sizes/font_size = 14
+text = "W: CIMA
+A: ESQUERDA
+S: BAIXO
+D: DIREITA"
+
+[node name="wasd" type="TextureRect" parent="."]
+offset_left = 59.0
+offset_top = 58.0
+offset_right = 156.0
+offset_bottom = 155.0
+texture = ExtResource("2_d88ou")
+expand_mode = 1
