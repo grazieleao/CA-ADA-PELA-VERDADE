@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://bvuvbfonrrdkb"]
 
-[ext_resource type="Texture2D" uid="uid://ctq8s67h1svuf" path="res://assets/sprites/Personagem Feminina.png" id="1_40ft3"]
+[ext_resource type="Texture2D" uid="uid://d32k8fv7gkkhf" path="res://assets/sprites/Personagem Feminina.png" id="1_40ft3"]
 
 [sub_resource type="Animation" id="Animation_ebo58"]
 resource_name = "correr_costas"
@@ -140,14 +140,14 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6tluq"]
 _data = {
-"correr_costas": SubResource("Animation_ebo58"),
-"correr_direita": SubResource("Animation_4ne23"),
-"correr_esquerda": SubResource("Animation_4spho"),
-"correr_frente": SubResource("Animation_iiy0a"),
-"parado_costas": SubResource("Animation_vdap0"),
-"parado_direita": SubResource("Animation_qdygi"),
-"parado_esquerdo": SubResource("Animation_6entq"),
-"parado_frente": SubResource("Animation_26x8j")
+&"correr_costas": SubResource("Animation_ebo58"),
+&"correr_direita": SubResource("Animation_4ne23"),
+&"correr_esquerda": SubResource("Animation_4spho"),
+&"correr_frente": SubResource("Animation_iiy0a"),
+&"parado_costas": SubResource("Animation_vdap0"),
+&"parado_direita": SubResource("Animation_qdygi"),
+&"parado_esquerdo": SubResource("Animation_6entq"),
+&"parado_frente": SubResource("Animation_26x8j")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8t7p7"]
@@ -161,14 +161,13 @@ position = Vector2(16, 14)
 texture = ExtResource("1_40ft3")
 hframes = 8
 vframes = 5
-frame = 32
+frame = 24
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_6tluq")
+&"": SubResource("AnimationLibrary_6tluq")
 }
 
 [node name="Collision" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(16, 26)
 shape = SubResource("RectangleShape2D_8t7p7")
