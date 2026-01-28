@@ -1,41 +1,63 @@
 extends Node
 
-# Este script deve ser configurado como um Autoload (Singleton) nas definições do projeto
-# Nome sugerido: AudioManager
-
+# Este script deve estar no Autoload como 'AudioManager' nas Configurações do Projeto
 var music_player: AudioStreamPlayer
 
+# Caminhos para os teus ficheiros de áudio (VERIFICA SE OS NOMES ESTÃO CORRETOS NA TUA PASTA ASSETS)
+const MUSICA_MENU = "res://assets/sounds/main - theme.mp3"
+const MUSICA_GAMEPLAY = "res://assets/sounds/intro_act01.mp3"
+
 func _ready():
-	# Criamos o player de áudio dinamicamente para que persista entre cenas
+	# Configuração do Player de Áudio
 	music_player = AudioStreamPlayer.new()
 	add_child(music_player)
+	music_player.bus = &"Music" # Garante que tens um Bus chamado 'Music' no Mixer, ou muda para 'Master'
 	
-	# Na Godot 4, garantimos que o áudio continue processando mesmo em pausa se necessário
+	# Permite que o áudio continue mesmo se o jogo for pausado
 	process_mode = Node.PROCESS_MODE_ALWAYS
-	
-	# Carrega o arquivo de música
-	# Dica: Verifique se a pasta assets/audio existe ou ajuste o caminho abaixo
-	var music_path = "res://assets/sounds/main - theme.mp3"
-	if FileAccess.file_exists(music_path):
-		var music_file = load(music_path) 
-		music_player.stream = music_file
-		music_player.bus = &"Music" # O prefixo & cria um StringName, mais eficiente na Godot 4
-	else:
-		print("Aviso: Arquivo de música não encontrado em: ", music_path)
 
 func play_menu_music():
-	if music_player and not music_player.playing:
-		# Reseta o volume para o padrão caso tenha vindo de um fade_out anteriormente
+	print("[AudioManager] A tentar tocar música do MENU...")
+	_change_track(MUSICA_MENU, false) # Sem fade para a intro/menu inicial
+
+func play_game_music():
+	print("[AudioManager] A mudar para música de GAMEPLAY...")
+	_change_track(MUSICA_GAMEPLAY, true) # Com fade suave para a transição de jogo
+
+func _change_track(path: String, use_fade: bool):
+	# Verifica se o ficheiro existe antes de carregar
+	if not FileAccess.file_exists(path):
+		printerr("[AudioManager] ERRO: Ficheiro não encontrado em: ", path)
+		return
+
+	var nova_musica = load(path)
+	
+	# Se a música que queres tocar já for a que está a dar, não faz nada
+	if music_player.stream == nova_musica and music_player.playing:
+		return
+	
+	if use_fade and music_player.playing:
+		var tween = create_tween()
+		# Fade out: baixa o volume até ao silêncio em 1 segundo
+		tween.tween_property(music_player, "volume_db", -80.0, 1.0).set_trans(Tween.TRANS_SINE)
+		
+		# Quando o silêncio chegar, troca a música e faz Fade In
+		tween.finished.connect(func():
+			music_player.stream = nova_musica
+			music_player.play()
+			
+			var tween_in = create_tween()
+			# Fade in: sobe do silêncio até ao volume normal (0 dB)
+			tween_in.tween_property(music_player, "volume_db", 0.0, 1.0).set_trans(Tween.TRANS_SINE)
+		)
+	else:
+		# Troca direta sem efeitos
+		music_player.stop()
+		music_player.stream = nova_musica
 		music_player.volume_db = 0.0
 		music_player.play()
 
-func stop_music():
+# Função utilitária para parar tudo
+func stop_all():
 	if music_player:
 		music_player.stop()
-
-func fade_out_music(duration: float = 1.0):
-	if music_player and music_player.playing:
-		var tween = create_tween()
-		# Transição suave de volume usando o novo sistema de Tween da Godot 4
-		tween.tween_property(music_player, "volume_db", -80.0, duration).set_trans(Tween.TRANS_SINE)
-		tween.finished.connect(stop_music)
