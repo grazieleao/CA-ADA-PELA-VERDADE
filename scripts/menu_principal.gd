@@ -11,7 +11,9 @@ func _on_exit_pressed() -> void:
 	get_tree().quit() # Fecha o jogo
 
 func _on_play_pressed() -> void:
+	AudioManager.play_game_music() # Isto ativa a transição
 	get_tree().change_scene_to_file("res://cenas/act01/act01_01.tscn")
+	 #AudioManager.play_game_music() # Isto ativa a transição
 
 func _on_controles_pressed() -> void:
 	get_tree().change_scene_to_file("res://cenas/menu/controles.tscn")
