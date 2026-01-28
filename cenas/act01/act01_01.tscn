@@ -17,238 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://dvwylwqb88q1h" path="res://cenas/act01/sprites_cena_01/Storyboard_Frame_10_ActionShot.png" id="14_wvhft"]
 [ext_resource type="Texture2D" uid="uid://cje8hrobpvqpq" path="res://assets/cenario/models/nevoa.png" id="16_hmryb"]
 
-[sub_resource type="Animation" id="Animation_axeob"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("intro/sprites/sprites:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("intro/sprites/dialogo/CaixaDialogo:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("intro/sprites/dialogo/EduardaCutsceneEGameplayCopia:visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("intro/sprites/dialogo/Name:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("intro/sprites/dialogo/dialog:visible")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("intro/sprites/dialogo/dialog:text")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["Tá sentindo isso? Parece que tá ficando mais frio…
-"]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("intro/sprites/dialogo/Name:text")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["EDUARDA"]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("intro/sprites/dialogo/IgorCutsceneEGameplayCopia:visible")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("intro/sprites/sprites/skip:position")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-1235, 96)]
-}
-tracks/9/type = "value"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("intro/sprites/sprites/Camera2D:position")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-1345, 29)]
-}
-tracks/10/type = "value"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("intro/sprites/dialogo:position")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/11/type = "value"
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/path = NodePath("intro/sprites/dialogo/dialog:position")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(563, 0)]
-}
-tracks/12/type = "value"
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/path = NodePath("intro/sprites/sprites/Camera2D:offset")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/13/type = "value"
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/path = NodePath("intro/boss_noiva_museu:visible")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/14/type = "value"
-tracks/14/imported = false
-tracks/14/enabled = true
-tracks/14/path = NodePath("intro/boss_noiva_museu:position")
-tracks/14/interp = 1
-tracks/14/loop_wrap = true
-tracks/14/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-1471, -15)]
-}
-tracks/15/type = "value"
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/path = NodePath("intro/sprites/sprites/npc_eduarda:visible")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("intro/boss_noiva_museu/Nevoa:visible")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/17/type = "value"
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/path = NodePath("intro/sprites/dialogo/Name:position")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-948, 67)]
-}
-tracks/18/type = "value"
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/path = NodePath("intro/controles/Fade:scale")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(2.098715, 2.474207)]
-}
-
 [sub_resource type="Animation" id="Animation_weuy6"]
 resource_name = "cut"
 length = 60.0
@@ -267,7 +35,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("intro/sprites/dialogo/CaixaDialogo:visible")
+tracks/1/path = NodePath("intro/sprites/sprites/dialogo/CaixaDialogo:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -279,7 +47,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("intro/sprites/dialogo/EduardaCutsceneEGameplayCopia:visible")
+tracks/2/path = NodePath("intro/sprites/sprites/dialogo/EduardaCutsceneEGameplayCopia:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -291,7 +59,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("intro/sprites/dialogo/Name:visible")
+tracks/3/path = NodePath("intro/sprites/sprites/dialogo/Name:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -303,7 +71,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("intro/sprites/dialogo/dialog:visible")
+tracks/4/path = NodePath("intro/sprites/sprites/dialogo/dialog:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -315,7 +83,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("intro/sprites/dialogo/dialog:text")
+tracks/5/path = NodePath("intro/sprites/sprites/dialogo/dialog:text")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -327,7 +95,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("intro/sprites/dialogo/Name:text")
+tracks/6/path = NodePath("intro/sprites/sprites/dialogo/Name:text")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -339,7 +107,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("intro/sprites/dialogo/IgorCutsceneEGameplayCopia:visible")
+tracks/7/path = NodePath("intro/sprites/sprites/dialogo/IgorCutsceneEGameplayCopia:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -375,7 +143,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("intro/sprites/dialogo:position")
+tracks/10/path = NodePath("intro/sprites/sprites/dialogo:position")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -387,7 +155,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("intro/sprites/dialogo/dialog:position")
+tracks/11/path = NodePath("intro/sprites/sprites/dialogo/dialog:position")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -471,7 +239,7 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("intro/sprites/dialogo/Name:position")
+tracks/18/path = NodePath("intro/sprites/sprites/dialogo/Name:position")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
@@ -491,6 +259,238 @@ tracks/19/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(1, 1), Vector2(2.098715, 2.474207), Vector2(5.443721, 3.8802304), Vector2(6.194904, 4.7486806)]
+}
+
+[sub_resource type="Animation" id="Animation_axeob"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("intro/sprites/sprites:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("intro/sprites/sprites/dialogo/CaixaDialogo:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("intro/sprites/sprites/dialogo/EduardaCutsceneEGameplayCopia:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("intro/sprites/sprites/dialogo/Name:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("intro/sprites/sprites/dialogo/dialog:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("intro/sprites/sprites/dialogo/dialog:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Tá sentindo isso? Parece que tá ficando mais frio…
+"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("intro/sprites/sprites/dialogo/Name:text")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["EDUARDA"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("intro/sprites/sprites/dialogo/IgorCutsceneEGameplayCopia:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("intro/sprites/sprites/skip:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1235, 96)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("intro/sprites/sprites/Camera2D:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1345, 29)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("intro/sprites/sprites/dialogo:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("intro/sprites/sprites/dialogo/dialog:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(563, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("intro/sprites/sprites/Camera2D:offset")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("intro/boss_noiva_museu:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("intro/boss_noiva_museu:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1471, -15)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("intro/sprites/sprites/npc_eduarda:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("intro/boss_noiva_museu/Nevoa:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("intro/sprites/sprites/dialogo/Name:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-948, 67)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("intro/controles/Fade:scale")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.098715, 2.474207)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_576rw"]
@@ -597,6 +597,49 @@ texture = ExtResource("8_ku10f")
 
 [node name="sprites" type="Node2D" parent="intro/sprites"]
 
+[node name="dialogo" type="Node2D" parent="intro/sprites/sprites"]
+
+[node name="IgorCutsceneEGameplayCopia" type="Sprite2D" parent="intro/sprites/sprites/dialogo"]
+visible = false
+position = Vector2(-1057.9531, 56)
+scale = Vector2(0.069, 0.069)
+texture = ExtResource("9_weuy6")
+
+[node name="EduardaCutsceneEGameplayCopia" type="Sprite2D" parent="intro/sprites/sprites/dialogo"]
+visible = false
+position = Vector2(-1062.2019, 57.000004)
+scale = Vector2(0.06946868, 0.06946868)
+texture = ExtResource("10_axeob")
+
+[node name="CaixaDialogo" type="Sprite2D" parent="intro/sprites/sprites/dialogo"]
+visible = false
+position = Vector2(-988.2019, 88.999985)
+scale = Vector2(1.6799951, 1)
+texture = ExtResource("11_wvhft")
+
+[node name="Name" type="Label" parent="intro/sprites/sprites/dialogo"]
+visible = false
+offset_left = -948.0
+offset_top = 67.0
+offset_right = -906.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_lr5jt")
+theme_override_font_sizes/font_size = 10
+text = "EDUARDA"
+
+[node name="dialog" type="Label" parent="intro/sprites/sprites/dialogo"]
+visible = false
+offset_left = 563.0
+offset_right = 1205.0
+offset_bottom = 29.0
+scale = Vector2(0.29113877, 0.98665786)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_lr5jt")
+theme_override_font_sizes/font_size = 10
+text = "Tá sentindo isso? Parece que tá ficando mais frio…
+"
+
 [node name="Camera2D" type="Camera2D" parent="intro/sprites/sprites"]
 position = Vector2(-1345, 29)
 
@@ -622,49 +665,6 @@ script = ExtResource("10_576rw")
 position = Vector2(-307, 43)
 scale = Vector2(0.29434097, 0.2932168)
 texture = ExtResource("14_wvhft")
-
-[node name="dialogo" type="Node2D" parent="intro/sprites"]
-
-[node name="IgorCutsceneEGameplayCopia" type="Sprite2D" parent="intro/sprites/dialogo"]
-visible = false
-position = Vector2(-1057.9531, 56)
-scale = Vector2(0.069, 0.069)
-texture = ExtResource("9_weuy6")
-
-[node name="EduardaCutsceneEGameplayCopia" type="Sprite2D" parent="intro/sprites/dialogo"]
-visible = false
-position = Vector2(-1062.2019, 57.000004)
-scale = Vector2(0.06946868, 0.06946868)
-texture = ExtResource("10_axeob")
-
-[node name="CaixaDialogo" type="Sprite2D" parent="intro/sprites/dialogo"]
-visible = false
-position = Vector2(-988.2019, 88.999985)
-scale = Vector2(1.6799951, 1)
-texture = ExtResource("11_wvhft")
-
-[node name="Name" type="Label" parent="intro/sprites/dialogo"]
-visible = false
-offset_left = -948.0
-offset_top = 67.0
-offset_right = -906.0
-offset_bottom = 90.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_lr5jt")
-theme_override_font_sizes/font_size = 10
-text = "EDUARDA"
-
-[node name="dialog" type="Label" parent="intro/sprites/dialogo"]
-visible = false
-offset_left = 563.0
-offset_right = 1205.0
-offset_bottom = 29.0
-scale = Vector2(0.29113877, 0.98665786)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_lr5jt")
-theme_override_font_sizes/font_size = 10
-text = "Tá sentindo isso? Parece que tá ficando mais frio…
-"
 
 [node name="controles" type="Control" parent="intro"]
 anchors_preset = 0
