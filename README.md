@@ -1,11 +1,11 @@
-# README - Jogo Indie: "Caminho das Folhas Perdidas"
+# README - Jogo Indie: "Caçada pela Verdade"
 
 ## Descrição do Jogo
 
-<!-- CAMINHO DAS FOLHAS PERDIDAS é um emocionante jogo indie que combina elementos de ação, aventura e quebra-cabeças para oferecer uma experiência de jogo única. Nele, os jogadores assumem o papel de um personagem principal (insira o nome do personagem) e embarcam em uma jornada épica por mundos misteriosos e desafiadores. -->
+CAÇADA PELA VERDADE é um emocionante jogo indie que combina elementos de ação, aventura e RPG para oferecer uma experiência de jogo única. Nele, os jogadores assumem o papel de um personagem principal "Eduardo" e embarcam em uma jornada épica por mundos misteriosos e desafiadores.
 
 ## Principais Características
-- Exploração na Floresta
+ - Exploração na Floresta
  - Estilo de Sobrevivência na Floresta
  - Estilo Pixel Art Top Down
  - Multiplataforma (MacOS, Windows, Linux e Android)
@@ -18,35 +18,7 @@
 + A = Esquerda
 + D = Direita
 ---
-- **Cenas Interativas**: 
 
-- **Quebra-Cabeças Criativos**: 
-
-- **Combate Empolgante**: 
-
-### História
-
-- **Narrativa Imersiva**: <!-- Mergulhe em uma história envolvente repleta de reviravoltas e personagens cativantes. -->
-
-- **Escolhas do Jogador**:<!--  Suas escolhas afetarão o desenrolar da história e o destino do seu personagem. -->
-
-<!-- 
-## Parâmetros Modificáveis
-
-O **Nome do Seu Jogo** permite que os desenvolvedores e jogadores modifiquem uma série de parâmetros para personalizar a experiência do jogo:
-
-1. **Dificuldade**: Ajuste o nível de dificuldade de acordo com sua preferência, desde o modo fácil para uma experiência mais relaxante até o modo difícil para um desafio extremo.
-
-2. **Modo de Jogo**: Escolha entre diferentes modos de jogo, como o modo história, modo de sobrevivência, ou modos de desafio exclusivos.
-
-3. **Personalização do Personagem**: Desbloqueie e escolha entre uma variedade de skins, trajes e acessórios para personalizar o visual do seu personagem.
-
-4. **Configurações de Gráficos**: Ajuste as configurações gráficas para otimizar o desempenho ou aproveitar ao máximo os visuais deslumbrantes.
-
-5. **Configurações de Áudio**: Personalize as configurações de áudio para obter a melhor experiência de áudio, desde efeitos sonoros imersivos até a música de fundo.
-
-6. **Modificadores de Quebra-Cabeça**: Desbloqueie e ative modificadores de quebra-cabeças para tornar os enigmas mais simples ou mais desafiadores, de acordo com sua preferência.
- -->
 ## Como Jogar
 
 - Baixe e execute o jogo em seu dispositivo (não é necessário instalar).
@@ -59,9 +31,7 @@ O **Nome do Seu Jogo** permite que os desenvolvedores e jogadores modifiquem uma
 
 O nosso repositório funciona com branchs centralizada com a <b>master</b> centralilada e com as outras branchs auxiliares.
 
-### Branches
-~~~
-~~~
+
 ## Requisitos de Sistema
 
 Para garantir uma experiência de jogo suave, verifique se seu dispositivo atende aos seguintes requisitos mínimos:
@@ -70,25 +40,20 @@ Para garantir uma experiência de jogo suave, verifique se seu dispositivo atend
 - Linux (.run)
 - Windows (.exe)
 ### Processador: 
- - 
- -
+ - Intel I3 3° Superior
 
 ### Memória RAM:
--
+- 2GB de RAM DDR3
 
-### Placa de Vídeo:
-- 
-### Armazenamento:
--
+
 ## Contato
-<!-- 
-- Email de Suporte: marciomoda@gmail.com
-- Email de Suporte: 
-- Email de Suporte:marciomoda@gmail.com
-- Redes Sociais:  -->
+- Email de Suporte: marciomoda18@gmail.com
 
 ## Feedback e Suporte
 
 Apreciamos seu feedback! Se você encontrar bugs, tiver sugestões ou precisar de suporte, entre em contato conosco pelos canais de contato listados acima.
 
-Divirta-se jogando **Caminho das Folhas Perdidas** e somos gratos por apoiar o desenvolvimento de jogos indie!
+Divirta-se jogando **CAÇADA PELA VERDADE** e somos gratos por apoiar o desenvolvimento de jogos indie!
+
+## LICENÇA
+Este projeto está sob uma Licença Proprietária Privada vinculada ao IFPA. É permitido baixar e jogar, mas **não é permitido editar (modificar) nem vender** sem autorização prévia. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
