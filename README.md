@@ -27,7 +27,7 @@ O protótipo foi validado com **34 participantes** durante a X Semana de Ciênci
 | Integrante | Função |
 |---|---|
 | Edy Carlos de Santana Souza | Coordenação geral, roteiro e narrativa, documentação acadêmica |
-| Laísa Graziela da Silva Leão | Coordenação geral, roteiro e narrativa, documentação acadêmica |
+| Laísa Graziela da Silva Leão | Coordenação geral, roteiro e narrativa |
 | Márcio Augusto Bentes Moda | Programação técnica (GDScript / Godot Engine) |
 | João Manoel Siqueira de Araújo | Arte visual — sprites em pixel art de personagens e cenários |
 
