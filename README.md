@@ -155,8 +155,6 @@ Baixe o executável, sem necessidade de instalação, e execute diretamente.
 
 O jogo está sob **licença proprietária privada vinculada ao registro acadêmico no IFPA**: download e uso pessoal são livres, mas modificação, engenharia reversa e comercialização exigem autorização prévia por escrito. Veja [`LICENSE`](LICENSE).
 
-> Nota: o arquivo de licença atual lista Grazi Leão, João Araújo e Márcio Moda como titulares dos direitos autorais, mas não inclui Edy Carlos de Santana Souza — apesar de constar como coautor do TCC e responsável pela coordenação geral do projeto. Vale atualizar o `LICENSE` para refletir os quatro integrantes da equipe corretamente antes da transferência do repositório.
-
 ---
 
 <div align="center">
