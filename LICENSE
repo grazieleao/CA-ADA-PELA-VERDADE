@@ -1,31 +1,119 @@
 TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 ================================================================
 
-PROPRIETARY INDIE GAME LICENSE (IFPA MONOGRAPH VERSION 2.0)
+PROPRIETARY INDIE GAME LICENSE (IFPA MONOGRAPH VERSION 2.1)
 
-Copyright (c) 2026 Edy Carlos, Laísa Graziela Leão, João Araújo e Márcio Moda.
+Copyright (c) 2026 Edy Carlos de Santana Souza, Laísa Graziela da Silva Leão,
+Márcio Augusto Bentes Moda e João Manoel Siqueira de Araújo.
 Todos os direitos reservados.
 
-Este projeto de jogo eletrônico ("Software") possui proteção de direitos autorais vinculada à publicação de monografia perante o Instituto Federal de Educação, Ciência e Tecnologia do Pará (IFPA). O uso, cópia e distribuição deste Software estão sujeitos às condições descritas abaixo:
+Este projeto de jogo eletrônico ("Software") foi desenvolvido como parte do Trabalho
+de Conclusão de Curso "Desenvolvimento do Jogo 'A Caçada pela Verdade' para
+Valorização das Lendas Obidenses", apresentado ao Instituto Federal de Educação,
+Ciência e Tecnologia do Pará (IFPA) — Campus Óbidos, como requisito para obtenção
+de grau no curso Tecnólogo em Análise e Desenvolvimento de Sistemas (2025/2026).
 
-1. PERMISSÃO DE DOWNLOAD E USO PESSOAL
---------------------------------------
-É concedida permissão a qualquer pessoa para baixar, instalar e executar cópias não modificadas deste Software em seus dispositivos pessoais, gratuitamente, exclusivamente para fins de entretenimento privado e não comercial.
+O Software possui proteção de direitos autorais vinculada a esse registro acadêmico.
+O uso, cópia e distribuição deste Software estão sujeitos às condições descritas
+abaixo.
 
-2. PROBIÇÃO DE MODIFICAÇÃO
----------------------------------------
-Você NÃO tem permissão para modificar, alterar, adaptar, traduzir, fazer engenharia reversa, descompilar, desmontar ou criar obras derivadas baseadas neste Software, em seu código-fonte, elementos gráficos, sonoros ou textuais, sob nenhuma circunstância, sem a autorização prévia, expressa e por escrito do titular dos direitos autorais.
+0. TITULARIDADE E CONTRIBUIÇÕES DA EQUIPE
+------------------------------------------
+Os direitos autorais sobre o Software são detidos em conjunto pelos quatro membros
+da equipe de desenvolvimento, conforme suas respectivas contribuições:
 
-3. PROIBIÇÃO DE COMERCIALIZAÇÃO
---------------------------------------------
-Você NÃO tem permissão para vender, alugar, arrendar, licenciar, sublicenciar, distribuir para fins comerciais ou lucrar de qualquer forma com o Software, suas cópias ou elementos integrantes. Qualquer exploração comercial depende de autorização prévia, expressa e em contrato separado firmado com o detentor dos direitos autorais.
+- Edy Carlos de Santana Souza — coordenação geral, roteiro, narrativa e
+  documentação acadêmica.
+- Laísa Graziela da Silva Leão — coordenação geral, roteiro, narrativa e
+  documentação acadêmica.
+- Márcio Augusto Bentes Moda — programação técnica (GDScript / Godot Engine).
+- João Manoel Siqueira de Araújo — identidade visual e sprites em pixel art de
+  personagens e cenários.
 
-4. DIREITOS AUTORAIS E PROPRIEDADE INTELECTUAL
----------------------------------------------
-O Software é licenciado, não vendido. Todos os direitos de propriedade intelectual, patentes de mecânicas (se houver), marcas e direitos autorais associados a este projeto permanecem sob a titularidade exclusiva do criador e são salvaguardados pelo registro institucional junto ao IFPA.
+Nenhuma decisão relativa à modificação, distribuição, exploração comercial ou
+transferência de titularidade do Software poderá ser tomada por apenas um dos
+quatro titulares, isolado dos demais. Alterações nessa condição de cotitularidade
+exigem acordo expresso e por escrito entre todos os titulares.
 
-5. ISENÇÃO DE GARANTIA
-----------------------
-O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA. EM NENHUM CASO OS AUTORES OU DETENTORES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRA RESPONSABILIDADE ORIUNDA DO USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
+1. AUTORIA SEPARADA DOS ELEMENTOS VISUAIS (SPRITES E PIXEL ART)
+------------------------------------------------------------------
+Os sprites e demais elementos gráficos em pixel art foram criados integralmente
+por João Manoel Siqueira de Araújo, que permanece titular exclusivo dos direitos
+autorais sobre essas artes, nos termos do "Termo de Autorização de Uso de Artes
+Digitais" firmado em 06 de janeiro de 2025 (Anexo B da monografia).
+
+Esse termo autoriza o uso das artes pelos demais integrantes da equipe
+exclusivamente para fins acadêmicos, incluindo o desenvolvimento do TCC,
+apresentações acadêmicas, avaliações institucionais, eventos científicos e
+versões demonstrativas do protótipo — sem que isso configure cessão de direitos
+autorais sobre as artes em si.
+
+Qualquer uso comercial do Software, incluindo dos elementos visuais nele contidos,
+depende de nova autorização específica de João Manoel Siqueira de Araújo, além da
+autorização dos demais titulares conforme a Seção 3 abaixo.
+
+2. PERMISSÃO DE DOWNLOAD E USO PESSOAL
+----------------------------------------
+É concedida permissão a qualquer pessoa para baixar, instalar e executar cópias
+não modificadas deste Software em seus dispositivos pessoais, gratuitamente,
+exclusivamente para fins de entretenimento privado e não comercial.
+
+3. PROIBIÇÃO DE MODIFICAÇÃO
+------------------------------
+Você NÃO tem permissão para modificar, alterar, adaptar, traduzir, fazer
+engenharia reversa, descompilar, desmontar ou criar obras derivadas baseadas
+neste Software, em seu código-fonte, elementos gráficos, sonoros ou textuais, sob
+nenhuma circunstância, sem a autorização prévia, expressa e por escrito de todos
+os titulares dos direitos autorais listados na Seção 0.
+
+4. PROIBIÇÃO DE COMERCIALIZAÇÃO
+----------------------------------
+Você NÃO tem permissão para vender, alugar, arrendar, licenciar, sublicenciar,
+distribuir para fins comerciais ou lucrar de qualquer forma com o Software, suas
+cópias ou elementos integrantes. Qualquer exploração comercial depende de
+autorização prévia, expressa e em contrato separado firmado com todos os
+titulares dos direitos autorais, incluindo autorização específica de João Manoel
+Siqueira de Araújo quanto aos elementos visuais (Seção 1).
+
+5. USO ACADÊMICO E INSTITUCIONAL
+------------------------------------
+O IFPA — Campus Óbidos e os professores orientadores (Prof. Me. Angel Pena Galvão
+e Prof. Esp. John Percival Rodrigues Linhares) mantêm o direito de utilizar
+registros, descrições e capturas de tela do Software para fins de avaliação
+acadêmica, arquivo institucional e divulgação da produção científica do curso,
+independentemente das demais restrições desta licença, nos termos da
+regulamentação de TCC do IFPA.
+
+6. FERRAMENTAS DE TERCEIROS E CONTEÚDO GERADO POR IA
+--------------------------------------------------------
+O Software foi desenvolvido com Godot Engine (licença MIT) e outras ferramentas
+de código aberto. Parte dos frames narrativos (cutscenes) foi produzida com
+auxílio de ferramenta de inteligência artificial generativa (Imagen 3, via
+plataforma Lovart), a partir de prompts originais da equipe e utilizando os
+sprites de João Manoel Siqueira de Araújo como referência visual — processo
+documentado no Capítulo 5 da monografia. Essa licença não altera os termos de uso
+de ferramentas de terceiros; consulte a licença de cada ferramenta separadamente
+quando aplicável.
+
+7. DIREITOS AUTORAIS E PROPRIEDADE INTELECTUAL
+---------------------------------------------------
+O Software é licenciado, não vendido. Todos os direitos de propriedade
+intelectual, patentes de mecânicas (se houver), marcas e direitos autorais
+associados a este projeto permanecem sob a titularidade conjunta dos criadores
+listados na Seção 0, respeitada a autoria separada descrita na Seção 1, e são
+salvaguardados pelo registro institucional junto ao IFPA.
+
+8. ISENÇÃO DE GARANTIA
+--------------------------
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
+IMPLÍCITA. EM NENHUM CASO OS AUTORES OU DETENTORES DOS DIREITOS AUTORAIS SERÃO
+RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRA RESPONSABILIDADE ORIUNDA DO
+USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
+
+9. LEGISLAÇÃO APLICÁVEL
+---------------------------
+Esta licença é regida pelas leis da República Federativa do Brasil, em especial
+a Lei nº 9.610/1998 (Direitos Autorais) e a Lei nº 9.609/1998 (Proteção da
+Propriedade Intelectual de Programa de Computador).
 
 ----------------------------------------------------------------
