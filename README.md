@@ -159,6 +159,6 @@ O jogo está sob **licença proprietária privada vinculada ao registro acadêmi
 
 <div align="center">
 
-IFPA Campus Óbidos · 2025-2026
+Edy Carlos de Santana Souza · 2026
 
 </div>
